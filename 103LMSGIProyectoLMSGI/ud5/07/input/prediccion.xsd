@@ -1,0 +1,68 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="prediccion.xml">
+    <xs:element name="prediccion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="municipio">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="provincia" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="dia">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="prob_precipitacion">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:int">
+                                        <xs:minInclusive value="0" />
+                                        <xs:maxInclusive value="100" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="estado_cielo" type="xs:string" />
+                            <xs:element name="viento">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="direccion" type="xs:string" />
+                                        <xs:element name="velocidad">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:int">
+                                                    <xs:minInclusive value="0" />
+                                                    <xs:maxInclusive value="400" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="temperatura">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="maxima">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:int">
+                                                    <xs:minInclusive value="-100" />
+                                                    <xs:maxInclusive value="100" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="minima">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:int">
+                                                    <xs:minInclusive value="-100" />
+                                                    <xs:maxInclusive value="100" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

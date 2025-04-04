@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    background-color: #e7e7e7;
+}
+.nombre{
+    text-decoration:underline;
+}
+header {
+    text-align: center;
+    width: 100%;
+    background-color: rgb(97, 201, 201);
+    border-radius: 3px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+main h2 {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.imagenes,
+.videos,
+.audios {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 1px 0;
+    border: 2px #ccc;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.imagenes div,
+.videos div,
+.audios div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.imagenes h3,
+.videos h3,
+.audios h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.cabecera {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 20px;
+    border-radius: 3px;
+}
+
+.imgh {
+    height: 100px;
+    width: 100px;
+}
+
+footer {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgb(97, 201, 201);
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .p1 {
+    text-align: left;
+}
+
+footer .p2 {
+    text-align: center;
+    flex-grow: 1;
+}
+
+footer .p3 {
+    text-align: right;
+}

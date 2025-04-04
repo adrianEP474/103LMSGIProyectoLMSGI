@@ -1,0 +1,237 @@
+
+{
+    "universidad" :{
+        "nombre":{
+            "texto": "Universidad de Victoria",
+            "year": 1964
+        },
+        "fechaconstruccion":"14/03/1964",
+        "pais":"España",
+        "carreras":[
+            {
+            "carrera":{
+                "id":"c01",
+                "nombre":"I.T. Informática",
+                "plan":2003,
+                "creditos":250,
+                "centro":"Escuela de Informática"
+                }
+            },
+            {
+                "carrera":{
+                    "id":"c02",
+                    "nombre":"Dipl. Empresariales",
+                    "plan":2001,
+                    "creditos":275,
+                    "centro":"Facultad de Ciencias Sociales"
+                }   
+            },
+            {
+                "carrera":{
+                    "id":"c03",
+                    "nombre":"Dipl. Relaciones Laborales",
+                    "plan":2001,
+                    "creditos":280,
+                    "centro":"Facultad de Ciencias Sociales",
+                    "subdirector":"Alfonso Martín Luque"
+                }
+            },
+            {
+                "carrera":{
+                "id":"c04",
+                "nombre":"Lic. Quimica",
+                "plan":2003,
+                "creditos":175,
+                "centro":"Facultad de Ciencias Experimentales"
+            }
+            },
+            {
+                "carrera":{
+                    "id":"c05",
+                    "nombre":"Lic. Biología",
+                    "plan":2001,
+                    "creditos":175,
+                    "centro":"Facultad de Ciencias Experimentales" 
+                }  
+            },
+            {
+                "carrera":{
+                    "id":"c06",
+                    "nombre":"Lic. Humanidades",
+                    "plan":1980,
+                    "creditos":475,
+                    "centro":"Facultad de Humanidades" 
+                }
+            }
+             
+        ],
+     "asignaturas":[
+            {
+            "asignatura":{
+                "id":"a01",
+                "titulacion":"c01",
+                "nombre":"Ofimática",
+                "creditos_teoricos":3,
+                "creditos_practicos":1.5,
+                "trimestre":1
+                }
+            },
+            {
+                "asignatura":{
+                    "id":"a02",
+                    "titulacion":"c01",
+                    "nombre":"Ingeniería del Software",
+                    "creditos_teoricos":6,
+                    "creditos_practicos":1.5,
+                    "trimestre":2
+                    } 
+            },
+            {
+                "asignatura":{
+                    "id":"a03",
+                    "titulacion":"c02",
+                    "nombre":"Administración de Empresas",
+                    "creditos_teoricos":4,
+                    "creditos_practicos":1.5,
+                    "trimestre":1
+                    }
+            },
+            {
+                "asignatura":{
+                    "id":"a04",
+                    "titulacion":"c02",
+                    "nombre":"Derecho Internacional",
+                    "creditos_teoricos":4,
+                    "creditos_practicos":5,
+                    "trimestre":1
+                    }
+            },
+            {
+                "asignatura":{
+                    "id":"a05",
+                    "titulacion":"c04",
+                    "nombre":"Pedagogía",
+                    "creditos_teoricos":4,
+                    "creditos_practicos":1.5,
+                    "trimestre":2
+                    }
+            },
+            {
+                "asignatura":{
+                    "id":"a06",
+                    "titulacion":"c03",
+                    "nombre":"Didáctica",
+                    "creditos_teoricos":4,
+                    "creditos_practicos":3,
+                    "trimestre":2
+                    }
+            },
+            {
+                "asignatura":{
+                    "id":"a07",
+                    "titulacion":"c04",
+                    "nombre":"Tecnología de los Alimentos",
+                    "creditos_teoricos":1.5,
+                    "creditos_practicos":7.5,
+                    "trimestre":2
+                    }
+            },
+            {
+                "asignatura":{
+                    "id":"a08",
+                    "titulacion":"c01",
+                    "nombre":"Bases de Datos",
+                    "creditos_teoricos":4.5,
+                    "creditos_practicos":5.5,
+                    "trimestre":1
+                    }
+            },
+            {
+                "asignatura":{
+                    "id":"a09",
+                    "titulacion":"c06",
+                    "nombre":"Historia del Pensamiento",
+                    "creditos_teoricos":6,
+                    "creditos_practicos":0,
+                    "trimestre":2
+                    }
+            }
+             
+        ],
+     "alumnos":[
+        {
+        "alumno":{
+            "id":"e01",
+            "apellido1":"Rivas",
+            "apellido2":"Santos",
+            "nombre":"Vístor Manuel",
+            "sexo":"Hombre",
+            "estudios":{
+                "carrera":{ "codigo":"c01"},
+                "asignaturas":[
+                   {"asignatura":{"codigo":"a01"}},
+                   {"asignatura":{"codigo":"a03"}}, 
+                   {"asignatura":{"codigo":"a05"}} ,
+                   {"asignatura":{"codigo":"a09"}} 
+                    ]
+                }
+            }
+        },
+        {
+            "alumno":{
+                "id":"e02",
+                "apellido1":"Pérez",
+                "apellido2":"García",
+                "nombre":"Luisa",
+                "sexo":"Mujer",
+                "estudios":{
+                    "carrera":{ "codigo":"c02"},
+                    "asignaturas":[
+                       {"asignatura":{"codigo":"a02"}},
+                       {"asignatura":{"codigo":"a01"}}
+                      
+                        ]
+                    }
+                }
+            },
+        
+            {
+                "alumno":{
+                    "id":"e03",
+                    "beca=":"si",
+                    "apellido1":"Pérez",
+                    "apellido2":"Romero",
+                    "nombre":"Fernando",
+                    "sexo":"Hombre",
+                    "estudios":{
+                        "carrera":{ "codigo":"c02"},
+                        "asignaturas":[
+                           {"asignatura":{"codigo":"a02"}},
+                           {"asignatura":{"codigo":"a01"}}, 
+                           {"asignatura":{"codigo":"a04"}} ,
+                           {"asignatura":{"codigo":"a09"}} 
+                            ]
+                        }
+                    }
+                },
+                {
+                    "alumno":{
+                        "id":"e04",
+                        "apellido1":"Avalón",
+                        "apellido2":"Jiménez",
+                        "nombre":"María",
+                        "sexo":"Mujer",
+                        "estudios":{
+                            "carrera":{ "codigo":"c01"},
+                            "asignaturas":[
+                               {"asignatura":{"codigo":"a02"}},
+                               {"asignatura":{"codigo":"a01"}}, 
+                               {"asignatura":{"codigo":"a07"}} 
+                                ],
+                            "proyecto":"Estudios de Salinidad del Pantano Iris"
+                            }
+                        }
+                    }
+     ]
+    }
+}

@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Jolly';
+    src: url(../font/JollyLodger-Regular.ttf);
+}
+@font-face{
+    font-family: 'Eater';
+    src: url(../font/Eater-Regular.ttf);
+}
+@font-face{
+    font-family: 'Slab';
+    src: url(../font/RobotoSlab-Regular.ttf);
+}
+@font-face{
+    font-family: 'Montserrat';
+    src: url(../font/Montserrat-Regular.ttf);
+}
+@font-face{
+    font-family: 'Merriweather';
+    src: url(../font/Merriweather-Regular.ttf);
+}

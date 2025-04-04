@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="autor" content="Adrian Espino Peña">
+    <meta name="descripcion" content="Formulario Zapatillas">
+    <link rel="icon" type="image/x-icon" href="../../webroot/media/favicon/zapatillaf.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" type="text/css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../webroot/css/estilos.css" type="text/css">
+    <link rel="stylesheet" href="css/estilos.css" type="text/css">
+    <style>
+    </style>
+    <title>Ud2.3 Adrian Espino Peña</title>
+</head>
+
+<body>
+    <header>
+        <h1>Plantilla de formulario de Zapatillas</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required><br><br>
+
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Introduce tu apellidos"
+                        required><br><br>
+
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" name="correo" required placeholder="Introduce tu correo"><br><br>
+
+                    <label for="contra">Contraseña:</label>
+                    <input type="password" id="contra" name="contra" placeholder="Introduce tu contraseña"><br><br>
+
+                    <label for="cumple">Mes en el que cumples años:</label>
+                    <input type="month" id="cumple" name="cumple"><br><br>
+
+                    <label for="fecha">Fecha actual:</label>
+                    <input type="date" id="fecha" name="fecha" value="2024-10-11" min="1900-01-01"
+                        max="2999-12-31"><br><br>
+
+                    <label for="telefono">Telefono de Contacto:</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}"
+                        placeholder="XXX-XX-XX-XX"><br><br>
+
+                    <label for="semana">Introduce la semana en la que estas haciendo el formulario:</label>
+                    <input type="week" id="semana" name="semana"><br><br>
+
+                    <label for="pie">¿Que numero de pie usas? ( 30 and 50):</label>
+                    <input type="number" id="pie" name="pie" min="30" max="50">
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Formulario sobre los gustos personales</legend>
+                    <label>¿Te Gustan las Zapatillas?</label><br>
+                    <label>Si</label>
+                    <input type="radio" id="tof1" name="tof" value="Si" checked><br>
+                    <label>No</label>
+                    <input type="radio" id="tof2" name="tof" value="No"><br>
+
+                    <label for="gusto">¿Cuanto te gustan las zapatillas?</label><br>
+                    <input type="range" id="gusto" name="gusto" min="0" max="100" value="50" step="10"><br>
+
+                    <label for="favcolor">Selecciona tu color favorito:</label><br>
+                    <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+
+                    <label>¿Cual es tu marca favorita?</label><br>
+                    <label>Nike</label>
+                    <input type="checkbox" id="nike" name="nike" value="nike" checked>
+                    <label>Jordan</label>
+                    <input type="checkbox" id="jordan" name="jordane" value="jordan">
+                    <label>Adidas</label>
+                    <input type="checkbox" id="adidas" name="adidas" value="adidas">
+                    <label>NB</label>
+                    <input type="checkbox" id="nb" name="nb" value="nb">
+                    <label>Asic</label>
+                    <input type="checkbox" id="asics" name="asics" value="asics">
+                    <label>Vans</label>
+                    <input type="checkbox" id="vans" name="vans" value="vans">
+
+                    <p>De estas marcas, ¿Cual es tu zapatilla favorita?</p>
+                    <label for="nike">Nike:</label>
+                    <select name="nike" id="nikec">
+                        <option value="ninguna">Ninguna</option>
+                        <option value="af1">Air force 1</option>
+                        <option value="tn">Tn</option>
+                        <option value="vm">VaporMax</option>
+                        <option value="dunk">Dunk</option>
+                        <option value="dunksb">Dunk SB</option>
+                        <option value="terrascp">TerraScape</option>
+                        <option value="otra">Otra</option>
+                    </select>
+
+                    <br><br>
+                    <label for="jordan">Jordan:</label>
+                    <select name="jordan" id="jordanc">
+                        <option value="ninguna">Ninguna</option>
+                        <option value="j1">Jordan 1</option>
+                        <option value="j2">Jordan 2</option>
+                        <option value="j3">Jordan 3</option>
+                        <option value="j4">Jordan 4</option>
+                        <option value="j5">Jordan 5</option>
+                        <option value="j6">Jordan 6</option>
+                        <option value="otra">Otra</option>
+                    </select>
+
+                    <br><br>
+                    <label for="adidas">Adidas</label>
+                    <select name="adidas" id="adidasc">
+                        <option value="ninguna">Ninguna</option>
+                        <option value="fm">yeezy Foam Runner</option>
+                        <option value="slide">yeezy Slide</option>
+                        <option value="350">yeezy 350</option>
+                        <option value="700">yeezy 700</option>
+                        <option value="500">yeezy 500</option>
+                        <option value="otra">Otra</option>
+                    </select>
+
+                    <h3>Curiosidades sobre algunas zapatillas</h3>
+                    <p hidden>Estas algunas de las zapatillas mas vendidas a dia de hoy</p>
+                    <dl>
+                        <dt><b>AF1</b>
+                        <dd>Salieron en el 1982, a las <time>10:30</time>
+                        <dt><b>TN</b>
+                        <dd>Salieron en el 1998, a las <time>09:45</time>
+                    </dl>
+                    <figure>
+                        <img src="./images/af1.png" alt="Air Force 1">
+                        <img src="./images/tn.png" alt="TN">
+                        <img src="./images/shox.png" alt="Shox">
+                        <figcaption>Algunas de las zapatillas mas usadas ahora mismo, de la marca <a
+                                href="https://www.nike.com/es/" target="_blank">Nike</a></figcaption>
+                    </figure>
+
+                    <br>
+                    <label for="intro">Como te empezaron a gustar:</label><br>
+                    <textarea id="intro" name="intro" rows="5" cols="33" minlength="20"
+                        maxlength="400">Me empezaron a gustar por:</textarea>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>¿Ya has hecho el formulario?, Subelo</legend>
+                    <label for="subirarchivo">Selecciona un archivo:</label>
+                    <input type="file" id="subirarchivo" name="subirarchivo">
+                </fieldset>
+                <br>
+                <input type="submit" value="Submit">
+                <input type="reset">
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>2024-25 IES Los Sauces. &#169; Todos los derechos reservados. <a href="../../index.html">Adrian Espino
+                Peña</a></p>
+        <p>Ultima modificación: <time datetime="2024-11-29T20:35:00">2024-12-12 - 23:35</time>.</p>
+        <a href="https://validator.w3.org/check?uri=https://daw103.ieslossauces.es/103LMSGIProyectoLMSGI/ud2/03/index.html"
+            target="_blank"><i class="fa-brands fa-wordpress fa-2xl" style="color: #0041b3;"></i></a>
+    </footer>
+</body>
+
+</html>

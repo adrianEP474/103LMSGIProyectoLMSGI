@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblio SYSTEM '02.dtd'>
+<biblio>
+    <libro idlibro="libro1" genero="Accion" ref="libro1">
+        <titulo>Harry Potter</titulo>
+        <autores>
+            <autor>
+                <nombre>Agata</nombre>
+                <apellido>Cristi</apellido>
+                <nacionalidad>Nigeriana</nacionalidad>
+            </autor>
+        </autores>
+        <anyo>2019</anyo>
+    </libro>
+    <libro idlibro="libro2" genero="Accion">
+        <titulo>Ana Frank</titulo>
+        <autores>
+            <autor>
+                <nombre>Ana</nombre>
+                <apellido>Frank</apellido>
+                <nacionalidad>Bulgara</nacionalidad>
+            </autor>
+        </autores>
+        <anyo>1945</anyo>
+    </libro>
+</biblio>

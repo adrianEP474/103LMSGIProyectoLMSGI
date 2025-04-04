@@ -1,0 +1,52 @@
+div>div>div {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    border: 10px;
+    border-color: black;
+    border-style: solid;
+    margin: 2px;
+    background-repeat: no-repeat;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+div>div:nth-child(3)>div {
+    background-image: url(../images/punto.png), url(../images/punto.png), url(../images/punto.png);
+    background-position: 10% 10%, 50% 50%, 90% 90%;
+}
+
+div>div:nth-child(1)>div {
+    background-image: url(../images/punto.png);
+    background-position: center, center;
+}
+
+body {
+    text-align: center;
+    background-color: lightblue;
+    display: block;
+    margin: 8px;
+}
+
+div>div:nth-child(2)>div {
+    background-image: url(../images/punto.png), url(../images/punto.png), url(../images/punto.png);
+    background-position: 10% 10%, 90% 90%;
+}
+
+div>div:nth-child(5)>div {
+    background-image: url(../images/punto.png), url(../images/punto.png), url(../images/punto.png), url(../images/punto.png), url(../images/punto.png);
+    background-position: 10% 10%, 90% 10%, 50% 50%, 90% 90%, 10% 90%;
+}
+
+div>div:nth-child(4)>div {
+    background-image: url(../images/punto.png), url(../images/punto.png), url(../images/punto.png), url(../images/punto.png);
+    background-position: 10% 10%, 90% 10%, 90% 90%, 10% 90%;
+}
+
+div>div>div {
+    background-size: 25px;
+    background-color: lightgreen;
+}

@@ -1,0 +1,75 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="04.02.xml">
+    <xs:element name="universidad">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string"/>
+                <xs:element name="fechaconstruccion" type="xs:date"/>
+                <xs:element name="pais" type="xs:string"/>
+                <xs:element name="carreras">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="carrera">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string"/>
+                                        <xs:element name="plan" type="xs:string"/>
+                                        <xs:element name="creditos" type="xs:string"/>
+                                        <xs:element name="centro" type="xs:string"/>
+                                        <xs:element name="subdirector"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="asignaturas">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="asignatura">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string"/>
+                                        <xs:element name="creditos_teoricos" type="xs:float"/>
+                                        <xs:element name="creditos_practicos" type="xs:float"/>
+                                        <xs:element name="trimestre" type="xs:int"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="alumnos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="alumno">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="apellido1" type="xs:string"/>
+                                        <xs:element name="apellido2" type="xs:string"/>
+                                        <xs:element name="nombre" type="xs:string"/>
+                                        <xs:element name="sexo" type="xs:string"/>
+                                        <xs:element name="estudios">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="carrera" type="xs:string"/>
+                                                    <xs:element name="asignaturas">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="asignatura" type="xs:string"/>
+                                                            </xs:sequence>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="proyecto" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
