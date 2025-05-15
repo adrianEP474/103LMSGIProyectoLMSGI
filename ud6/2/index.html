@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>u6.2 JSON: Adrian Espino</title>
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        #parrafo {
+            white-space: pre-line;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #parrafo span {
+            font-weight: bolder;
+        }
+
+        #cargarBtn {
+            background-color: rgb(0, 132, 255);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #cargarBtn:hover {
+            background-color: rgb(5, 109, 206);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Listado de personas</h1>
+    <button id="cargarBtn">Cargar Lista (json)</button>
+
+    <div id="parrafo"></div>
+
+    <script>
+        const boton = document.getElementById('cargarBtn');
+        const p = document.getElementById('parrafo');
+
+        boton.addEventListener('click', function() {
+            fetch('./archivo1.json')
+                .then(response => {
+                    if (!response.ok) throw new Error("Error en tiempo de ejecución al cargar");
+                    return response.json();
+                })
+                .then(jsonData => {
+                    console.log(jsonData);
+                    p.innerHTML = `<span>Nombre: </span>${jsonData.nombre} <span>- Edad:</span> ${jsonData.edad}`;
+                })
+                .catch(error => console.log(error));
+        });
+    </script>
+
+</body>
+
+</html>

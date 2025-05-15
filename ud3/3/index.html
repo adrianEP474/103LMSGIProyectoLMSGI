@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Adrian Espino Peña</title>
+        <script src="./js.js" defer></script>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            html, body {
+                height: 100%;
+            }
+
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;  
+                min-height: 100vh;
+                font-family: sans-serif;
+                background-color: lightgray;
+            }
+
+            .tablero {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+                max-width: 650px;
+                margin: 20px auto;
+                border-radius: 5px;
+            }
+
+            .casilla {
+                width: 200px;
+                height: 200px;
+                background-color: white;
+                border: 1px solid #ccc;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .casilla img {
+                max-width: 100%;
+                max-height: 100%;
+                border-radius: 8px;
+            }
+
+            footer {
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 10px 0;
+                width: 100%;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+            }
+
+            footer a {
+                color: #00bfff; 
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+    <h1><b>Juego de Tablero con Imágenes</b></h1>
+    <div class="tablero" id="tablero">
+    </div>
+    <footer>
+        <div>Todos los derechos reservados. Creado por: <a href="../../index.html">Adrian Espino Peña</a></div>
+    </footer>
+    </body>
+</html>

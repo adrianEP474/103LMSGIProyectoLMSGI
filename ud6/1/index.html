@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>u6.1 JSON: Adrian Espino Peña</title>
+    <style>
+        #parrafo {
+            white-space: pre-line;
+            background-color: beige;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        #parrafo span {
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cargar JSON en el navegador</h1>
+    <div id="parrafo"></div>
+
+    <script>
+       
+        fetch('./archivo.json')
+
+            .then(response => { 
+                if (!response.ok) throw new Error("Error en tiempo de ejecución al cargar");  // Verifica si la respuesta es válida
+                return response.json();  
+            })
+
+            .then(jsonData => {  
+                console.log(jsonData);  
+                const p = document.getElementById('parrafo'); 
+                p.innerHTML = `<span>Nombre: </span>${jsonData.nombre}  <span>Edad:</span> ${jsonData.edad}`;  // Muestra los datos en el div
+            })
+
+            .catch(error => console.log(error)); 
+    </script>
+</body>
+
+</html>
